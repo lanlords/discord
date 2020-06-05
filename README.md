@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/lanlords/discord/badge)](https://www.codefactor.io/repository/github/lanlords/discord)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 # Lanlords Discord Page

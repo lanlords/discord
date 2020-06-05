@@ -1,6 +1,7 @@
 # global
 url: https://discord.lanlords.nl
 title: Lanlords Discord
+github: https://github.com/lanlords/discord
 
 # env specific
 api_url: https://discordapp.com/api/guilds/351732061561946114/widget.json

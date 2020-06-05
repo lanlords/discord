@@ -9,18 +9,12 @@ html, body {
 }
 a {
   text-decoration: none;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid currentColor;
-}
-a:hover {
-  color: #000;
-  border-bottom: 1px solid currentColor;
 }
 b {
   font-weight: bold;
 }
 h1 {
-  text-align: left;
+  text-align: center;
 }
 hr {
   margin: 25px;
@@ -109,3 +103,45 @@ hr {
   background-color: #5b6eae;
 }
 #btn-discord:focus { outline: 0; }
+
+#lanlords-logo {
+  width: 80%;
+  max-width: 180px;
+}
+
+/* --- github --- */
+.github-corner {
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+  display: inline-block;
+  z-index: 1;
+}
+.github-corner span {
+  display: inline-block;
+}
+.github-corner span svg {
+  fill: #151513;
+  color:#fff;
+  z-index: -1
+}
+.github-corner:hover span .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+  border: none;
+}
+@keyframes octocat-wave {
+  0%, 100% { transform: rotate(0) }
+  20%, 60% { transform: rotate(-25deg) }
+  40%, 80% { transform: rotate(10deg) }
+}
+@media (max-width:500px) {
+  .github-corner:hover span.octo-arm {
+    animation: none;
+    border: none;
+  }
+  .github-corner span .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+    border: none;
+  }
+}
