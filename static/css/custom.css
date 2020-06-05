@@ -104,11 +104,6 @@ hr {
 }
 #btn-discord:focus { outline: 0; }
 
-#lanlords-logo {
-  width: 80%;
-  max-width: 180px;
-}
-
 /* --- github --- */
 .github-corner {
   position: absolute;
