@@ -1,0 +1,43 @@
+<script>
+new Vue({
+  delimiters: ["[[", "]]"],
+  el: '#app',
+  data () {
+    return {
+      discord_voice: null,
+      discord_online: null,
+      discord_invite: null
+    }
+  },
+  mounted () {
+    axios
+      .get('{{ site.api_url }}')
+      .then(response => {
+        // count of all online users
+        this.discord_online = response.data.presence_count;
+        // count of active voice members
+        this.discord_voice = count_voice(response.data.members)
+        // direct invite link to Discord server
+        this.discord_invite = response.data.instant_invite;
+      })
+  }
+})
+
+// count members in voice channels from members list
+function count_voice(members_list) {
+  // init count var
+  var count = 0;
+  // loop through members
+  for (i = 0; i < members_list.length; i++) {
+    // set current member
+    var member = members_list[i];
+    // check if member is in a channel
+    if(typeof member.channel_id !== 'undefined') {
+      // increment channels count
+      count++
+    }
+  }
+  // return voice count
+  return count
+}
+</script>

@@ -1,0 +1,14 @@
+---
+version: "3"
+services:
+  web:
+    image: "jekyll/jekyll:3.8.5"
+    volumes:
+      - ./:/srv/jekyll
+    command: jekyll serve --config _config-dev.yml --host 0.0.0.0
+    ports:
+      - "4000:4000"
+  cors:
+    image: "imjacobclark/cors-container:latest"
+    ports:
+      - "3000:3000"

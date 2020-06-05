@@ -1,0 +1,111 @@
+/* -- general -- */
+html, body {
+  height: 100%;
+  color: #5c5962;
+  background-color: #f5f6fa;
+  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue",
+               helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+  font-size: 16px !important;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid currentColor;
+}
+a:hover {
+  color: #000;
+  border-bottom: 1px solid currentColor;
+}
+b {
+  font-weight: bold;
+}
+h1 {
+  text-align: left;
+}
+hr {
+  margin: 25px;
+  border-width: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* --- grid -- */
+#app {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.block {
+  width: calc(100% - 40px);
+  max-width: 400px;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.row {
+  margin: 10px 0px;
+  width: 100%;
+}
+.line {
+  padding: 10px 20px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.text {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.quote {
+  padding: 5px 0px;
+  padding-bottom: 10px;
+  background: #eee;
+  width: 100%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/* --- icon --- */
+.icon {
+  margin: 0 5px 0 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  pointer-events: all;
+  position: relative;
+  top: 5px;
+  stroke: currentColor;
+  fill: none; */
+}
+.icon-svg {
+  display: none;
+}
+.icon-online {
+  stroke: green;
+}
+.icon-voice {
+  stroke: blue;
+}
+
+/* --- object --- */
+#btn-discord {
+  width: 100%;
+  padding: 15px 0px;
+  margin: 0;
+  display: block;
+  color: #fff;
+  background-color: #7289da;
+  border-width: 0px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+#btn-discord:hover {
+  background-color: #677bc4;
+}
+#btn-discord:active {
+  padding: 16px 0px 14px;
+  background-color: #5b6eae;
+}
+#btn-discord:focus { outline: 0; }

@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div id="app">
+
+  <div class="block">
+    <div class="row">
+      <h1>Lanlords Discord</h1>
+    </div>
+
+    <div class="row">
+      <hr/>
+    </div>
+
+    <div class="row text">
+      Welkom op de Lanlords Discord pagina! Klik onder aan op de knop
+      om de Lanlords Discord server te joinen.
+    </div>
+
+    <div class="row quote">
+      <div class="line">
+        <svg class="icon icon-online"><use xlink:href="#icon-power" /></svg>
+        Momenteel zijn er <b>[[ discord_online ]]</b> mensen online
+      </div>
+      <div class="line">
+        <svg class="icon icon-voice"><use xlink:href="#icon-volume" /></svg>
+        Hier van zitten er <b>[[ discord_voice ]]</b> in voice channels
+      </div>
+    </div>
+
+    <div class="row">
+      <hr/>
+    </div>
+
+    <div class="row">
+      <a id="btn-discord" v-bind:href="discord_invite">Join Discord</a>
+    </div>
+  </div>
+
+</div>

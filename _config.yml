@@ -1,0 +1,13 @@
+# global
+url: https://discord.lanlords.nl
+title: Lanlords Discord
+
+# env specific
+api_url: https://discordapp.com/api/guilds/351732061561946114/widget.json
+vue_url: https://cdn.jsdelivr.net/npm/vue
+
+# build
+sass:
+  style: compressed
+
+exclude: [".scss", "README.md", "docker-compose.yml", "node_modules", "gruntfile.js", "package.json", "Gemfile", "Gemfile.lock", "LICENSE", "CNAME"]
