@@ -1,4 +1,5 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/lanlords/discord/badge)](https://www.codefactor.io/repository/github/lanlords/discord)
+[![Discord Online](https://img.shields.io/discord/351732061561946114.svg)](https://discord.lanlords.nl)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 # Lanlords Discord Page
