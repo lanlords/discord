@@ -3,9 +3,12 @@ html, body {
   height: 100%;
   color: #5c5962;
   background-color: #f5f6fa;
-  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue",
-               helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
   font-size: 16px !important;
+}
+@supports (font-variation-settings: normal) {
+  body { font-family: InterVariable, sans-serif; }
 }
 a {
   text-decoration: none;
